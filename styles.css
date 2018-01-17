@@ -1,0 +1,154 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* start formatting */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  background-color: #FFFFFF;
+  color: #5E5E5E;
+  width: 90%;
+  margin: auto;
+}
+
+header img {
+  width: 48px;
+  height: auto;
+  padding-top: 60px;
+  display: inline-block;
+}
+
+h1 {
+  padding-top: 60px;
+  padding-left: 32px;
+  font-size: 72px;
+  display: inline-block;
+}
+
+#mySketch {
+  width: 800px;
+  height: 250px;
+  z-index: -10;
+}
+
+main {
+  padding-top: 48px;
+}
+
+section {
+  height: 60%;
+  margin: auto;
+  line-height: 36px;
+  margin-bottom: 300px;
+}
+
+#studios {
+  float: left;
+  margin-right: 10%;
+}
+
+#studios ol {
+  padding-left: 156px;
+}
+
+#projects {
+  float: left;
+}
+
+#projects ul {
+  padding-left: 184px;
+}
+
+h2 {
+  color: #35BDB7;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+footer {
+  display: block;
+  font-size: 18px;
+  clear: both;
+  padding: 24px;
+  background-color: #5E5E5E;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #5E5E5E;
+}
+
+a:visited {
+  color: #5E5E5E;
+}
+
+a:active {
+  color: #35BDB7;
+}
+
+a:hover {
+  color: #35BDB7;
+}
+
+footer a:link {
+  color: #FFFFFF;
+}
+
+#validation {
+  float: right;
+}
+
+#validation a {
+  margin-left: 12px;
+}
