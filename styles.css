@@ -58,6 +58,10 @@ body {
   margin: auto;
 }
 
+header {
+	user-select: none;
+}
+
 header img {
   width: 48px;
   height: auto;
@@ -66,15 +70,18 @@ header img {
 }
 
 h1 {
-  padding-top: 60px;
-  padding-left: 32px;
+	padding-left: 32px;
   font-size: 72px;
+	position: relative;
   display: inline-block;
+	z-index:10;
 }
 
 #mySketch {
   width: 800px;
   height: 250px;
+	margin-top: -72px;
+	position: relative;
   z-index: -10;
 }
 
