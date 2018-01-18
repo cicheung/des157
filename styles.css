@@ -152,10 +152,18 @@ footer a:link {
   color: #FFFFFF;
 }
 
+footer a:visited {
+	color: #FFFFFF;
+}
+
 #validation {
   float: right;
 }
 
 #validation a {
   margin-left: 12px;
+}
+
+#topic-brainstorm {
+	margin-bottom: 32px;
 }
