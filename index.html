@@ -1,53 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Cindy Cheung's DES 157 Portal</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
-    <script src="sketch.js"></script>
+  <meta charset="UTF-8">
+  <title>Studio 1</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700,900,900i" rel="stylesheet">
+  <script src="script.js"></script>
 </head>
 
 <body>
-    <header>
-        <img src="cc-logo.png" alt="personal logo" />
-        <h1>Cindy Cheung</h1>
-        <div id=mySketch></div>
-    </header>
-
-    <main>
-        <section>
-            <nav id=studios>
-              <h2>STUDIOS</h2>
-              <ol>
-                <li><a href="">1//studio 0</a></li>
-                <li><a href="studio1/index.html">2//studio 1</a></li>
-                <li><a href="">3//</a></li>
-                <li><a href="">4//</a></li>
-              </ol>
-            </nav>
-
-            <nav id=projects>
-              <h2>PROJECTS</h2>
-              <ul>
-                <li><a href="topic-brainstorm.html">Topic Brainstorm</a></li>
-                <li><a href="comparative.html">Comparative Analysis</a></li>
-                <li><a href="">Project 3</a></li>
-                <li><a href="">Project 4</a></li>
-              </ul>
-            </nav>
-        </section>
-    </main>
-
-    <footer>
-      <a href="mailto:cicheung@ucdavis.edu">Email Me!</a>
-      <div id=validation>
-        <a href="https://validator.w3.org/nu/#file">Valid HTML 5</a>
-        <a href="https://jigsaw.w3.org/css-validator/validator">Valid CSS</a>
+  <h1>GORDON RAMSAY'S INSULTS</h1>
+  <div id="form">
+    <form name="gordon">
+      <div>
+        <label class="question" for="person1">female</label>
+        <input type="text" name="person1" id="person1" value="My gran" required>
       </div>
-    </footer>
+      <div>
+        <label for="adj1">adjective</label>
+        <input type="text" name="adj1" id="adj1" value="dead" required>
+      </div>
+      <div>
+        <label for="adj2">adjective</label>
+        <input type="text" name="adj2" id="adj2" value="idiot" required>
+      </div>
+      <div>
+        <label for="verb3">action verb</label>
+        <input type="text" name="verb2" id="verb3" value="jump" required>
+      </div>
+      <div>
+        <label for="noun3">noun</label>
+        <input type="text" name="noun3" id="noun3" value="oven" required>
+      </div>
+      <div>
+        <label for="adj3">adjective ending<br>in -er</label>
+        <input type="text" name="adj3" id="adj3" value="easier" required>
+      </div>
+      <div>
+        <label for="food4">food item</label>
+        <input type="text" name="foot4" id="food4" value="panini" required>
+      </div>
+      <div>
+        <label for="verb5">action verb</label>
+        <input type="text" name="verb5" id="verb5" value="kick" required>
+      </div>
+      <div>
+        <label for="body5">body part</label>
+        <input type="text" name="body5" id="body5" value="nuts" required>
+      </div>
+      <div>
+        <label for="adj6">adjective</label>
+        <input type="text" name="adj6" id="adj6" value="sh*t" required>
+      </div>
+      <div>
+        <input type="submit" value="ROAST ME, GORDON" />
+        <input type="reset" value="INSULT ME AGAIN!" />
+      </div>
+
+    </form>
+  </div>
+
+  <section id="results">
+    <p id="myMsg"></p>
+  </section>
+
+<script src="script.js"></script>
+
+<footer>
+  <div id=validation>
+    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcicheung.github.io%2Fdes157%2Fstudio1%2Findex.html">Valid HTML 5</a>
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcicheung.github.io%2Fdes157%2Fstudio1%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+  </div>
+</footer>
 
 </body>
 
