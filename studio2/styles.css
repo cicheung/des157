@@ -1,181 +1,176 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/* start formatting */
-
+/* FOR MOBILE */
 body {
   font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  background-color: #FFFFFF;
-  color: #5E5E5E;
-  width: 90%;
-  margin: auto;
+  width: 100%
 }
 
-header {
-	user-select: none;
+/* set position so objects can use position: absolute, center main image */
+#all-me {
+  position: relative;
+  text-align: center;
 }
 
-header img {
-  width: 48px;
-  height: auto;
-  padding-top: 60px;
-  display: inline-block;
+/* set width of main image */
+#me {
+  width: 55%;
 }
 
+/* position muji pen in pocket, start with low opacity */
+#muji-in-pocket {
+  width: 2.5%;
+  position: absolute;
+  top: 52.2%;
+  left: 36.6%;
+  opacity: .5;
+}
+
+/* position phone in pocket, start with low opacity */
+#phone-in-pocket {
+  width: 6.5%;
+  position: absolute;
+  top: 51.4%;
+  right: 33.2%;
+  opacity: .5;
+}
+
+/* position glasses on face, start with low opacity */
+#glasses-on-face {
+  width: 37.5%;
+  position: absolute;
+  top: 13.1%;
+  left:31.2%;
+  opacity: .5;
+}
+
+/* style h1 */
 h1 {
-	padding-left: 32px;
-  font-size: 72px;
-	position: relative;
-  display: inline-block;
-	z-index:10;
+  margin: 4% 1% 4% 1%;
+  font-size: 2em;
+  text-align: center;
 }
 
-#comparative-h1 {
-	padding-left: 0px;
-	margin-bottom: 48px;
+/* style object info */
+.content {
+  position: absolute;
+  top: 40%;
+  font-size: .8em;
+  line-height: 1.2;
+  padding: 6%;
+  margin: 4%;
+  background-color: black;
+  color: white;
+  opacity: .85;
+  display: none;
 }
-
-#mySketch {
-  width: 800px;
-  height: 250px;
-	margin-top: -72px;
-	position: relative;
-  z-index: -10;
-}
-
-main {
-  padding-top: 48px;
-}
-
-section {
-  height: 60%;
-  margin: auto;
-  line-height: 36px;
-  margin-bottom: 300px;
-}
-
-#studios {
+.content img {
   float: left;
-  margin-right: 10%;
+  padding: 1% 5% 0 2%;
+  opacity: 1;
 }
 
-#studios ol {
-  padding-left: 156px;
+/* set muji pen size */
+#muji img {
+  width: 6%;
 }
 
-#projects {
-  float: left;
+/* set phone size */
+#phone img {
+  padding: 4% 4% 4% 0;
+  width: 30%;
 }
 
-#projects ul {
-  padding-left: 184px;
-}
-
-h2 {
-  color: #35BDB7;
-  font-weight: bold;
-  font-size: 36px;
-  margin-bottom: 12px;
-}
-
-p {
-	font-size: 16px;
-	line-height: 1.25;
-	margin-top: 12px;
-	margin-bottom: 24px;
-}
-
-footer {
+/* set glasses size */
+#glasses img {
   display: block;
-  font-size: 18px;
-  clear: both;
-  padding: 24px;
-  background-color: #5E5E5E;
+  margin: auto;
+  width: 60%;
+  float: none;
 }
 
-a {
+/* footer styles */
+footer {
+  font-size: .6em;
+  padding: 4% 2% 2% 0%;
+  text-align: right;
+}
+footer a {
+  color: gray;
   text-decoration: none;
+  padding-right: 2%;
 }
 
-a:link {
-  color: #5E5E5E;
-}
+/* FOR DESKTOP */
+@media only screen and (min-width: 768px) {
+  /* set main image size */
+  #me {
+    width: 17%;
+  }
+  /* h1 style */
+  h1 {
+    margin: 1% 0 1% 0;
+    font-size: 2.5em;
+    text-align: center;
+  }
 
-a:visited {
-  color: #5E5E5E;
-}
+  /* resize/position muji in pocket for desktop */
+  #muji-in-pocket {
+    width: .75%;
+    position: absolute;
+    top: 52.34%;
+    left: 45.9%;
+  }
 
-a:active {
-  color: #35BDB7;
-}
+  /* resize/position phone in pocket for desktop */
+  #phone-in-pocket {
+    width: 2%;
+    position: absolute;
+    top: 51.4%;
+    right: 44.85%;
+  }
 
-a:hover {
-  color: #35BDB7;
-}
+  /* resize/position glasses on face for desktop */
+  #glasses-on-face {
+    width: 11.5%;
+    position: absolute;
+    top: 13.1%;
+    left: 44.2%;
+  }
 
-footer a:link {
-  color: #FFFFFF;
-}
+  /* restyle info box for desktop */
+  .content {
+    position: absolute;
+    top: 38%;
+    font-size: .8em;
+    line-height: 1.2;
+    padding: 1%;
+    margin: 0 32% 0 32%;
+    background-color: black;
+    color: white;
+    opacity: .85;
+    display: none;
+  }
+  .content img {
+    float: left;
+    padding: 1% 5% 0 2%;
+    opacity: 1;
+  }
 
-footer a:visited {
-	color: #FFFFFF;
-}
+  /* set width of objects for desktop */
+  #muji img {
+    width: 3%;
+  }
+  #phone img {
+    padding: 1% 4% 1% 0;
+    width: 23%;
+  }
+  #glasses img {
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
 
-#validation {
-  float: right;
-}
-
-#validation a {
-  margin-left: 12px;
-}
-
-#topic-brainstorm {
-	margin-bottom: 32px;
+  /* footer styles */
+  #footer {
+    padding: 0;
+  }
 }
