@@ -1,0 +1,167 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  width: 100%
+}
+
+#all-me {
+  position: relative;
+}
+
+#me {
+  width: 55%;
+}
+
+#muji-in-pocket {
+  width: 2.5%;
+  position: absolute;
+  top: 52.2%;
+  left: 36.6%;
+  opacity: .5;
+  transition-timing-function: ease;
+}
+
+#phone-in-pocket {
+  width: 6.5%;
+  position: absolute;
+  top: 51.4%;
+  right: 33.2%;
+  opacity: .5;
+}
+
+#glasses-on-face {
+  width: 37.5%;
+  position: absolute;
+  top: 13.1%;
+  left:31.2%;
+  opacity: .5;
+}
+
+h1 {
+  margin: 4% 1% 4% 1%;
+  font-size: 2em;
+  text-align: center;
+}
+
+#all-me {
+  text-align: center;
+}
+
+.content {
+  position: absolute;
+  top: 40%;
+  font-size: .8em;
+  line-height: 1.2;
+  padding: 6%;
+  margin: 4%;
+  background-color: black;
+  color: white;
+  opacity: .85;
+  display: none;
+}
+.content img {
+  float: left;
+  padding: 1% 5% 0 2%;
+  opacity: 1;
+}
+
+#muji img {
+  width: 6%;
+}
+
+#phone img {
+  padding: 4% 4% 4% 0;
+  width: 30%;
+}
+
+#glasses img {
+  display: block;
+  margin: auto;
+  width: 60%;
+  float: none;
+}
+
+footer {
+  font-size: .6em;
+  padding: 4% 2% 2% 0%;
+  text-align: right;
+}
+
+footer a {
+  color: gray;
+  text-decoration: none;
+  padding-right: 2%;
+}
+
+
+@media only screen and (min-width: 768px) {
+  #me {
+    width: 17%;
+  }
+
+  h1 {
+    margin: 1% 0 1% 0;
+    font-size: 2.5em;
+    text-align: center;
+  }
+
+  #muji-in-pocket {
+    width: .75%;
+    position: absolute;
+    top: 52.34%;
+    left: 45.9%;
+    opacity: .5;
+  }
+
+  #phone-in-pocket {
+    width: 2%;
+    position: absolute;
+    top: 51.4%;
+    right: 44.85%;
+    opacity: .5;
+  }
+
+  #glasses-on-face {
+    width: 11.5%;
+    position: absolute;
+    top: 13.1%;
+    left: 44.2%;
+    opacity: .5;
+  }
+
+  .content {
+    position: absolute;
+    top: 38%;
+    font-size: .8em;
+    line-height: 1.2;
+    padding: 1%;
+    margin: 0 32% 0 32%;
+    background-color: black;
+    color: white;
+    opacity: .85;
+    display: none;
+  }
+  .content img {
+    float: left;
+    padding: 1% 5% 0 2%;
+    opacity: 1;
+  }
+
+  #muji img {
+    width: 3%;
+  }
+
+  #phone img {
+    padding: 1% 4% 1% 0;
+    width: 23%;
+  }
+
+  #glasses img {
+    display: block;
+    margin: auto;
+    width: 60%;
+  }
+
+  #footer {
+    padding: 0;
+  }
+}
