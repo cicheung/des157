@@ -77,7 +77,7 @@ h1 {
 	z-index:10;
 }
 
-#comparative-h1 {
+#comparative-h1, #research-h1 {
 	padding-left: 0px;
 	margin-bottom: 48px;
 }
@@ -130,6 +130,22 @@ p {
 	line-height: 1.25;
 	margin-top: 12px;
 	margin-bottom: 24px;
+}
+
+#research {
+	float: left;
+	width: 64%;
+	display: inline;
+}
+
+#bibliography {
+	position: absolute;
+	top: 26%;
+	left: 65%;
+	right: 5%;
+	padding: 2%;
+	display: inline;
+	border: solid #35BDB7;
 }
 
 footer {
