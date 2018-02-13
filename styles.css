@@ -80,6 +80,7 @@ h1 {
 #comparative-h1, #research-h1, #audience-h1 {
 	padding-left: 0px;
 	margin-bottom: 48px;
+	display: block;
 }
 
 #mySketch {
@@ -98,7 +99,10 @@ section {
   height: 60%;
   margin: auto;
   line-height: 36px;
-  margin-bottom: 300px;
+}
+
+#portal-section {
+	margin-bottom: 300px;
 }
 
 #studios {
@@ -149,11 +153,12 @@ p {
 }
 
 #audience img {
+	display: inline-block;
 	float: left;
 }
 
 #audience-name {
-	font-size: 1em;
+	font-size: 3em;
 	font-weight: bold;
 	float: left;
 	margin: 1% 1% 2% 2%;
@@ -161,7 +166,7 @@ p {
 }
 
 .audience-label {
-	font-size: .4em;
+	font-size: 1.2em;
 	font-weight: bold;
 	float: left;
 	line-height: 1.5;
