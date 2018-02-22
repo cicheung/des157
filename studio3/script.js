@@ -1,5 +1,8 @@
+"use strict"
+
 $('#form').parsley();
 
+//custom validator for maximum file size
 window.Parsley.addValidator('maxFileSize', {
   validateString: function(_value, maxSize, parsleyInstance) {
     if (!window.FormData) {
