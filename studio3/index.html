@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Studio 3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="parsley.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/7.0.0/normalize.css">
+  <link rel="stylesheet" type="text/css" href="parsley.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,700,900,900i" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <img src="site.png" alt="site mockup" />
+    <div id="site-overlay"></div>
+  </header>
+
+  <!-- <div class="bs-callout bs-callout-warning hidden">
+    <h2>Aw man!</h2>
+    <p>I think you're missing some information!</p>
+  </div>
+
+  <div class="bs-callout bs-callout-info hidden">
+    <h2>Hooray!</h2>
+    <p>Thanks for making a profile :)</p>
+  </div> -->
+
+  <form id="profile-form" data-parsley-validate="">
+    <h1>Welcome! Create your profile :)</h1>
+    <label for="profpic">Profile picture (&lt;200kb):</label>
+    <input type="file" id="profpic" required="" data-parsley-max-file-size="200">
+
+    <label for="firstname">First name</label>
+    <input type="text" class="form-control" id="firstname" required="">
+
+    <label for="lastname">Last name</label>
+    <input type="text" class="form-control" id="lastname" required="">
+
+    <label for="username">Username (must be longer than 8 characters, no symbols)</label>
+    <input type="text" class="form-control" id="username" required="" data-parsley-minlength="8" data-parsley-type="alphanum">
+
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" required="" data-parsley-type="email">
+
+    <label for="aboutme">About Me (&lt;500 words)</label>
+    <textarea id="aboutme" required="" data-parsley-maxwords="2"></textarea>
+
+    <input type="submit" class="btn btn-default pull-right">
+  </form>
+
+  <footer>
+    <div id=validation>
+      <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fcicheung.github.io%2Fdes157%2Fstudio2%2Findex.html">Valid HTML 5</a>
+      <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fcicheung.github.io%2Fdes157%2Fstudio2%2Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en">Valid CSS</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
