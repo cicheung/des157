@@ -93,6 +93,8 @@ h1 {
 
 main {
   padding-top: 48px;
+	height: 100%;
+	padding-bottom: 5%;
 }
 
 section {
@@ -101,8 +103,8 @@ section {
   line-height: 36px;
 }
 
-#portal-section {
-	margin-bottom: 300px;
+nav {
+	margin-bottom: 5%;
 }
 
 #studios {
