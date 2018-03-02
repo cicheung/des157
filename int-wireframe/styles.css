@@ -129,5 +129,8 @@ footer {
   bottom: 3%;
   right: 3%;
   text-align: right;
+}
+
+ul {
   list-style: none;
 }
